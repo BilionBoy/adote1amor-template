@@ -10225,7 +10225,8 @@ h6,
   display: flex;
   align-items: center;
 }
-/* Overlay adicional para área do texto */
+
+/* Overlay adicional para área do texto - ligeiramente mais escuro */
 .jumbotron::before {
   content: "";
   position: absolute;
@@ -10235,9 +10236,9 @@ h6,
   height: 100%;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    transparent 100%
+    rgba(0, 0, 0, 0.35) 0%,
+    /* de 0.3 para 0.35 */ rgba(0, 0, 0, 0.25) 50%,
+    /* de 0.2 para 0.25 */ transparent 100%
   );
   z-index: 1;
 }
@@ -10250,14 +10251,13 @@ h6,
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(52, 152, 219, 0.25) 30%,
-    rgba(46, 204, 113, 0.2) 70%,
-    rgba(0, 0, 0, 0.15) 100%
+    rgba(0, 0, 0, 0.08) 0%,
+    /* de 0.05 para 0.08 */ rgba(52, 152, 219, 0.12) 30%,
+    /* de 0.08 para 0.12 */ rgba(46, 204, 113, 0.08) 70%,
+    /* de 0.05 para 0.08 */ rgba(0, 0, 0, 0.06) 100% /* de 0.03 para 0.06 */
   );
   z-index: 1;
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -10265,11 +10265,11 @@ h6,
 
 .hero-title {
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1rem;
-  color: #e74c3c; /* Rosa/coral primary do site */
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  color: #e74c3c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* sombra discreta pra destacar no fundo claro */
 }
 
 .hero-subtitle {
@@ -10424,7 +10424,7 @@ h6,
   font-size: 0.9rem;
   background: #f8f9fa;
   margin-bottom: 12px;
-  color: #2c3e50;
+  color: black;
 }
 
 .search-input:focus {
