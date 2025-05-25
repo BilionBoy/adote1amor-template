@@ -1,0 +1,1 @@
+# adote1amor-template
