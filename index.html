@@ -32,7 +32,7 @@
 
   <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-secondary d-none d-sm-block">
       <div class="row py-2 px-lg-5">
         <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
           <div class="d-inline-flex align-items-center text-white">
@@ -120,46 +120,119 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div
-      class="jumbotron jumbotron-fluid position-relative overlay-bottom"
-      style="margin-bottom: 90px"
-    >
-      <div class="container text-center my-5 py-5">
-        <h1 class="text-white mt-4 mb-4">Learn From Home</h1>
-        <h1 class="text-white display-1 mb-5">Education Courses</h1>
-        <div class="mx-auto mb-5" style="width: 100%; max-width: 600px">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <button
-                class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle"
-                type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Courses
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="hero-overlay"></div>
+
+      <!-- Floating Elements -->
+      <div class="floating-elements">
+        <i class="fas fa-paw floating-icon" style="font-size: 3rem"></i>
+        <i class="fas fa-heart floating-icon" style="font-size: 2.5rem"></i>
+        <i class="fas fa-dog floating-icon" style="font-size: 3.5rem"></i>
+        <i class="fas fa-cat floating-icon" style="font-size: 3rem"></i>
+        <i class="fas fa-bone floating-icon" style="font-size: 2rem"></i>
+      </div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="feature-badge">
+              <i class="fas fa-star"></i> Mais de 1000 animais salvos
+            </div>
+
+            <h1 class="hero-title">Transforme uma Vida com Amor</h1>
+
+            <div class="d-flex flex-wrap">
+              <button class="btn btn-hero btn-primary-hero">
+                <i class="fas fa-heart me-2"></i>Adotar Agora
               </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Courses 1</a>
-                <a class="dropdown-item" href="#">Courses 2</a>
-                <a class="dropdown-item" href="#">Courses 3</a>
+              <button class="btn btn-hero btn-secondary-hero">
+                <i class="fas fa-play me-2"></i>Como Funciona
+              </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-container">
+              <div class="row">
+                <div class="col-3 stat-item">
+                  <span class="stat-number">1.2K+</span>
+                  <span class="stat-label">Animais Salvos</span>
+                </div>
+                <div class="col-3 stat-item">
+                  <span class="stat-number">850+</span>
+                  <span class="stat-label">Famílias Felizes</span>
+                </div>
+                <div class="col-3 stat-item">
+                  <span class="stat-number">15+</span>
+                  <span class="stat-label">Parceiros</span>
+                </div>
+                <div class="col-3 stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Suporte</span>
+                </div>
               </div>
             </div>
-            <input
-              type="text"
-              class="form-control border-light"
-              style="padding: 30px 25px"
-              placeholder="Keyword"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="search-box">
+              <h4 class="text-dark mb-3 fw-bold">
+                <i class="fas fa-search text-danger me-2"></i>
+                Encontre seu Companheiro
+              </h4>
+
+              <div class="row g-3">
+                <div class="col-12">
+                  <select class="form-select search-input">
+                    <option>Tipo de Animal</option>
+                    <option>🐕 Cachorro</option>
+                    <option>🐱 Gato</option>
+                    <option>🐰 Coelho</option>
+                    <option>🐦 Pássaro</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select search-input">
+                    <option>Idade</option>
+                    <option>Filhote (0-1 ano)</option>
+                    <option>Jovem (1-3 anos)</option>
+                    <option>Adulto (3-7 anos)</option>
+                    <option>Idoso (7+ anos)</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select search-input">
+                    <option>Porte</option>
+                    <option>Pequeno</option>
+                    <option>Médio</option>
+                    <option>Grande</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="Bairro"
+                  />
+                </div>
+                <div class="col-12">
+                  <button class="search-btn">
+                    <i class="fas fa-search me-2"></i>Buscar Meu Amigo
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-center mt-3">
+                <small class="text-muted">
+                  <i class="fas fa-shield-alt text-success me-1"></i>
+                  Processo 100% seguro e verificado
+                </small>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Header End -->
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -169,7 +242,7 @@
             <div class="position-relative h-100">
               <img
                 class="position-absolute w-100 h-100"
-                src="img/about.jpg"
+                src="img/Adote1Amor.png"
                 style="object-fit: cover"
               />
             </div>
